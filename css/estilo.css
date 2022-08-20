@@ -1,0 +1,235 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+}
+
+/*TOPO*/
+
+.cabecalho
+{
+    background-color: #00BFFF;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+}
+
+.container-links
+{
+    width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home
+{
+    height: 60px;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.home img
+{
+    width: 150px;
+    height: 75px;
+}
+
+nav
+{
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+}
+
+/*CONTEÚDO*/
+
+.secao1
+{
+    background-image: url("assets/recepcao.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-titulo
+{
+    width: 1024px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+
+/*CONTEUDO 2*/
+
+.secao2
+{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+.container-titulo2
+{
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+.tamanho
+{
+    max-width: 1024px;
+}
+
+main .tamanho
+{
+    margin: 0px auto;
+}
+
+.container-medico
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-medico>img
+{
+    float: left;
+}
+
+.container-list
+{
+    float: right;
+}
+
+/*CONTEÚDO ESPECIALIDADES*/
+
+.especialidades
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+figcaption
+{
+    text-align: center;
+    color:#fff;
+    background-color:#00BFFF;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 50%);
+    border-radius: 5px 0px 5px 0px;
+    padding: 5px;
+}
+
+.especialista img
+{
+    width:250px;
+    height: 175px;
+    border-radius: 0px 5px 0px 5px;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 50%);;
+}
+
+/*BOTÃO VER HORARIOS */
+
+.horarios
+{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.horarios a
+{
+    background-color: #00BFFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 50%) ;
+    padding: 10px;
+}
+
+.iframe
+{
+    padding: 0px 10px 0px 10px;
+}
+
+.footer
+{
+    background-color: #008080;
+    height: 250px;
+    color: #fff;
+}
+
+/*PSEUDO-CLASSE*/
+
+a:hover
+{
+    color:dimgray;
+    font-weight: 500;
+    font-size: 18px;
+    text-shadow: 0px 1px 10px rgb(0 0 0 / 50%);
+}
+
+/*Media Queries*/
+
+@media (min-width: 320px) and (max-width: 425px )
+{
+    .home, .container-medico>img
+    {
+        display: none;
+    }
+    .container-links, .secao1
+    {
+        display: flex;
+        justify-content: center;
+        margin: 0px auto;
+    }
+    .container-titulo>h1, .container-list>h3
+    {
+        text-align: center;
+    }
+    .container-titulo
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px )
+{
+    .home, .container-medico>img
+    {
+        display: none;
+    }
+    nav
+    {
+        width: 100%;
+        display: flex;
+        justify-content:space-around;
+        margin: 0px auto;
+    }
+}

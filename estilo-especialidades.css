@@ -1,0 +1,214 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+}
+
+/*TOPO*/
+
+.cabecalho
+{
+    background-color: #00BFFF;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+}
+
+.container-links
+{
+    width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home
+{
+    height: 60px;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.home img
+{
+    width: 150px;
+    height: 75px;
+}
+
+nav
+{
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+}
+
+/*CONTEÚDO*/
+
+.sectionlinks
+{
+    display: flex;
+    flex-flow:  row wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.boxlinks
+{
+    max-width: 1024px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.boxlinks a
+{
+
+        text-decoration: none;
+        margin: 10px;
+        padding: 10px;
+        color: black;
+        border-bottom: 3px solid #00BFFF;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+}
+
+.title
+{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/*PRÉ-TABELAS*/
+
+.sectionreset
+{
+    margin-bottom: 30px;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+}
+
+.description
+{
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    flex-flow: column;
+}
+
+.boxtable
+{
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture
+{
+    width: 250px;
+    height: 200px;
+    float: left;
+}
+
+/*TABELAS*/
+
+.table
+{
+    width: 500px;
+    height: 200px;
+}
+.table, th, td
+{
+    border-collapse: collapse;
+}
+
+th, td
+{
+    padding: 5px 10px;
+}
+
+th
+{
+    background-color: #00BFFF;
+}
+
+/*PSEUDO-CLASSE TABELA*/
+
+table tr:nth-of-type(odd)
+{
+    background-color: #C0C0C0;
+}
+
+table tr:nth-of-type(even)
+{
+    background-color: #F5F5F5;
+}
+
+/*RODAPÉ*/
+
+.footer
+{
+    background-color: #008080;
+    height: 250px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 320px) and (max-width: 425px)
+{
+    .boxtable img
+    {
+        display: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 425px)
+{
+    .table
+    {
+        width: 100%;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) 
+{
+    .boxtable img
+    {
+        display: none;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) 
+{
+    .table
+    {
+        width: 100%;
+    }
+}
